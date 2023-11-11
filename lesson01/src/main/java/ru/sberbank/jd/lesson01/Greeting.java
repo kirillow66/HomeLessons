@@ -28,7 +28,7 @@ public interface Greeting {
     Collection<String> getHobbies();
 
     /**
-     * Получение имени репозитория bitbucket.
+     * Получение имени репозитория gitHub.
      */
     String getGitHubUrl();
 
