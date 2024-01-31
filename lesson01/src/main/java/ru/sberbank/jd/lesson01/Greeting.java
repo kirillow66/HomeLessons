@@ -30,7 +30,7 @@ public interface Greeting {
     /**
      * Получение имени репозитория bitbucket.
      */
-    String getBitbucketUrl();
+    String getGitHubUrl();
 
     /**
      * Получение телефона.
