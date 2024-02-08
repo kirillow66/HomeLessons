@@ -16,22 +16,17 @@ public class CustomDigitComparator implements Comparator<Integer> {
      */
     @Override
     public int compare(Integer lhs, Integer rhs) {
-        if (lhs == null && rhs == null) {
+        if (lhs == null || rhs == null) {
+            throw new IllegalArgumentException();
+        }
+        boolean firstEven = lhs % 2 == 0;
+        boolean secondEven = rhs % 2 == 0;
+        if (firstEven && secondEven) {
             return 0;
         }
-        if (lhs == null) {
+        if (firstEven) {
             return -1;
         }
-        if (rhs == null) {
-            return 1;
-        }
-        if ((lhs % 2 == 0) && (rhs % 2 == 0)) {
-            return 0;
-        }
-        if ((lhs % 2 == 0) && (rhs % 2 != 0)) {
-            return -1;
-        } else {
-            return 1;
-        }
+        return 1;
     }
 }
