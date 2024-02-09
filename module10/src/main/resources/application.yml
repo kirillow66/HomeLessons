@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+myapp:
+  service-url: http://localhost:8080  # URL для заглушки
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prom
+
+myapp:
+  service-url: https://httpbin.org/get  # URL для реального вызова
