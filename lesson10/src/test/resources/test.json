@@ -1,0 +1,17 @@
+{
+  "cds" : [ {
+    "title" : "Empire Burlesque",
+    "artist" : "Bob Dylan",
+    "country" : "USA",
+    "company" : "Columbia",
+    "price" : 10.9,
+    "year" : 1985
+  }, {
+    "title" : "Hide your heart",
+    "artist" : "Bonnie Tyler",
+    "country" : "UK",
+    "company" : "CBS Records",
+    "price" : 9.9,
+    "year" : 1988
+  } ]
+}
