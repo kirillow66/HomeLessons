@@ -320,9 +320,9 @@ public class CustomArrayImpl<T> implements CustomArray<T> {
         } else {
             StringBuilder sb = new StringBuilder();
             sb.append("[");
-            for (int i = 0; i < elementData.length; i++) {
+            for (int i = 0; i < size; i++) {
                 sb.append(elementData[i]);
-                if (i < elementData.length - 1) {
+                if (i < size - 1) {
                     sb.append(" ");
                 }
             }
