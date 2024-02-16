@@ -11,8 +11,8 @@ import org.springframework.web.client.RestTemplate;
  */
 public class WeatherProvider {
 
-    private RestTemplate restTemplate = new RestTemplate();
     private static final String API_KEY = "0c48922c38f8e6e08091504a58613d63"; // Replace with your actual API key
+    private RestTemplate restTemplate = new RestTemplate();
 
     /**
      * Download ACTUAL weather info from internet. You should call GET
