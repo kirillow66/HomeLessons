@@ -5,7 +5,14 @@ package ru.sberbank.jd.lesson04;
  */
 public class WordCount {
 
+    /**
+     * Метод main который выполняет программу считывания аргументов из консоли и вывода необходиой информации на экран
+     * по запросу.
+     *
+     * @param args принимает на вход аргументы из консоли
+     */
     public static void main(String[] args) {
+
         ArgumentParser parser = new ArgumentParser();
         Arguments arguments = parser.parse(args);
 
